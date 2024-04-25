@@ -18,6 +18,7 @@ public abstract class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+
     }
 
     public int getId() {
@@ -78,6 +79,7 @@ class Profesor extends User {
     public Profesor(int id, String firstName, String lastName, String email, int pid) {
         super(id, firstName, lastName, email);
         this.pid = pid;
+       
     }
 
     public int getPid() {return pid;}
